@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Solution for Module 2</title>
+    <style>
+
+
+
+/* Smart phone */
+@media (max-width: 767px) {
+   .col-sm-12 {
+		float: left;
+        width: 100%;
+        position: relative;
+	}
+    .col-sm-0 {
+		display: none;
+	}
+
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px){
+    .col-md-6,
+	.col-md-12 {
+		float: left;
+	}
+    .col-md-0 {
+		display: none;
+	}
+
+	.col-md-6 {
+		width: 50.00%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+}
+
+/* Computer */
+@media (min-width: 992px) {
+	.col-lg-4, .col-lg-12 {
+		float: left;
+	}
+    .col-lg-0 {
+		display: none;
+	}
+
+	.col-lg-4 {
+		width: 33.33%;
+	}
+
+	.col-lg-12 {
+		width: 100%;
+	}
+}
+
+
+h1 {
+    text-align: center;
+}
+p, h1, h2 {
+	font-family: "Times New Roman", Times, serif;
+}
+
+section {
+	position: relative;
+	margin: 20px;
+    border: 1px solid black;
+    background-color: rgb(185, 141, 141);
+    height: 200px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+section:hover{
+    overflow-y: scroll;
+}
+
+
+section > h2 {
+	position:absolute;
+	margin-top: 0px;
+	top: 0px;
+	right: 0px;
+	width: 200px;
+	text-align: center;
+    border: 1px solid rgb(107, 103, 103);
+}
+
+
+section > p {
+	padding: 20px 10px 10px 10px;
+}
+
+#box1 > h2 {
+	background-color: #db6868;
+}
+
+#box2 > h2 {
+	background-color: #f03131;
+}
+
+#box3 > h2 {
+	background-color: #bbcc20;
+}
+.row {
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div>
+    <h1 id="header" class="col-md-12 col-lg-12 col-sm-0">Our Menu</h1>
+    <h1 id="header2" class="col-sm-12 col-md-0 col-lg-0">Categories</h1>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <section id="box1">
+                <h2 class="col-sm-0">
+					Chicken
+				</h2>
+                <h2 class="col-sm-12 col-md-0 col-lg-0" >
+                    Chicken cooked in the oven at 400 for 25 minutes
+                </h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at congue urna, sit amet malesuada elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec suscipit ultricies rhoncus. Aenean sapien magna, euismod ornare metus eu, accumsan scelerisque tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus pretium lorem quis nisi dignissim, ac malesuada mauris consequat. Phasellus volutpat eu risus eget porttitor. Cras quis urna quam. Mauris sed placerat lectus, in luctus magna. Integer sagittis sollicitudin cursus. Nullam eu ultrices tortor.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at congue urna, sit amet malesuada elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec suscipit ultricies rhoncus. Aenean sapien magna, euismod ornare metus eu, accumsan scelerisque tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus pretium lorem quis nisi dignissim, ac malesuada mauris consequat. Phasellus volutpat eu risus eget porttitor. Cras quis urna quam. Mauris sed placerat lectus, in luctus magna. Integer sagittis sollicitudin cursus. Nullam eu ultrices tortor.
+				</p>
+            </section>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+            <section id="box2">
+                <h2 class="col-sm-0">
+					Beef
+				</h2>
+                <h2 class="col-sm-12 col-md-0 col-lg-0" >
+                    Home cooked blue cheese burgers toppped with bacon, cheese, tomatoe and lettuce
+                </h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at congue urna, sit amet malesuada elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec suscipit ultricies rhoncus. Aenean sapien magna, euismod ornare metus eu, accumsan scelerisque tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus pretium lorem quis nisi dignissim, ac malesuada mauris consequat. Phasellus volutpat eu risus eget porttitor. Cras quis urna quam. Mauris sed placerat lectus, in luctus magna. Integer sagittis sollicitudin cursus. Nullam eu ultrices tortor.
+				</p>
+            </section>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-4">
+            <section id="box3">
+                <h2 class="col-sm-0">
+					Sushi
+				</h2>
+                <h2 class="col-sm-12 col-md-0 col-lg-0" >
+                    Spicy king salmon sushi roll with chiptole sauce
+                </h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at congue urna, sit amet malesuada elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec suscipit ultricies rhoncus. Aenean sapien magna, euismod ornare metus eu, accumsan scelerisque tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus pretium lorem quis nisi dignissim, ac malesuada mauris consequat. Phasellus volutpat eu risus eget porttitor. Cras quis urna quam. Mauris sed placerat lectus, in luctus magna. Integer sagittis sollicitudin cursus. Nullam eu ultrices tortor.
+				</p>
+            </section>
+        </div>
+</body>
+</html>
