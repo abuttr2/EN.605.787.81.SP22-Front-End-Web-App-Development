@@ -28,11 +28,11 @@
 
 .nav-menu-item{
 	width: 100%;
-    color: grey;
+  color: grey;
 	background-color: white;
 	border-bottom: 2px solid black;
 	display: block;
-    padding: 0;
+  padding: 0;
 	margin: 0;
 }
 
