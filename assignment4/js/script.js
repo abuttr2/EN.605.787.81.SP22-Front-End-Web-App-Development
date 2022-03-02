@@ -127,8 +127,6 @@ function buildAndShowHomeHTML (categories) {
 }
 
 dc.loadAbout = function () {
-  console.log("Build and show about")
-  // showLoading("#main-content");
   $ajaxUtils.sendGetRequest(aboutHtmlURL,
     buildAndShowAboutHTML);
 };
@@ -193,7 +191,6 @@ dc.loadMenuItems = function (categoryShort) {
 // Builds HTML for the categories page based on the data
 // from the server
 function buildAndShowCategoriesHTML (categories) {
-  console.log(categories)
   // Load title snippet of categories page
   $ajaxUtils.sendGetRequest(
     categoriesTitleHtml,
