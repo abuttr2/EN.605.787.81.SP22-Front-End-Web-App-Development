@@ -1,0 +1,11 @@
+<div class="row">
+    <div ng-repeat="menuitem in menuitems.items">
+            <div class="jumbotron">
+                <h2>{{menuitem.name}}</h2>
+                <h3>{{menuitem.short_name}}</h3>
+                <p>{{menuitem.description}}</p>
+                <input type="button" class="btn btn-primary" value="Don't want this one!" ng-click="menuitems.onRemove({index: $index})">
+            </div>
+    </div>
+</div>
+<div class="alert" role="alert" ng-show="menuitems.onEmpty">{{menuitems.onEmpty}}</div>
