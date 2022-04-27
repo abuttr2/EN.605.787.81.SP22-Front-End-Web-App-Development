@@ -1,0 +1,16 @@
+<table class="table table-bordered ">
+	<thead >
+		<tr>
+            <th class="text-center">Name</th>
+			<th class="text-center">Description</th>
+            <th class="text-center">Price</th>
+		</tr>
+	</thead>
+	<tbody>
+    	<tr ng-repeat="category in $ctrl.items">
+            <td class="text-center">{{category.name}}</td>
+			<td class="text-center">{{category.description}}</td>
+            <td class="text-center">${{category.price_large}}</td>
+		</tr>
+	</tbody>
+</table>

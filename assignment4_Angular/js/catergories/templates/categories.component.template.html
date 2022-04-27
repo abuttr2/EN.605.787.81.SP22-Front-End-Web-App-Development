@@ -1,0 +1,14 @@
+<table>
+	<thead>
+		<tr>
+            <th class="text-center">Category Name</th>
+		</tr>
+	</thead>
+	<tbody>
+    	<tr ng-repeat="category in $ctrl.categories">
+			<td class="text-center"><input type="button"
+                 value={{category.name}}
+                ui-sref="items({category: category.short_name})"></td>
+		</tr>
+	</tbody>
+</table>
