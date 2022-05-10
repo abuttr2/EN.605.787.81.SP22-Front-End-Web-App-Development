@@ -1,0 +1,14 @@
+<div class="container" ng-hide="userinfo.userRegisteredStatus">
+    <h1 class="text-center">Not Signed Up Yet. <a ui-sref="public.signup">Sign up Now!</a></h1>
+</div>
+<div class="container" ng-show="userinfo.userRegisteredStatus">
+    <p>First name: {{userinfo.user.firstName}}</p>
+    <p>Last name: {{userinfo.user.lastName}}</p>
+    <p>Email address: {{userinfo.user.email}}</p>
+    <p>Phone number: {{userinfo.user.phone}}</p>
+    <p>Favorite Menu Item Name: {{userinfo.user.favoriteFoodDets.name}}</p>
+    <p>Favorite Menu Item description: {{userinfo.user.favoriteFoodDets.description}}</p>
+    <div>
+        <img ng-src="{{userinfo.ApiPath}}/images/{{userinfo.user.shortName}}.jpg" alt="{{userinfo.user.favoriteFoodDets.name}}" />
+    </div>
+</div>

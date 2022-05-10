@@ -1,0 +1,36 @@
+<form class="container" name="signupValidation" novalidate ng-submit="signupCtrl.submit(signupValidation)">
+    <div>
+        <div>
+            <label>First name</label>
+            <span class="alert-danger" ng-show=" (!signupValidation.firstName.$pristine || signupValidation.$submitted) && signupValidation.firstName.$error.required">Invalid</span>
+            <input required type="text" name="firstName" ng-model="signupCtrl.firstName" class="form-control" placeholder="First name" ></input>
+        </div>
+        <div>
+            <label>Last name</label>
+            <span class="alert-danger" ng-show="(!signupValidation.lastName.$pristine || signupValidation.$submitted) && signupValidation.lastName.$error.required">Invalid</span>
+            <input required type="text" name="lastName" ng-model="signupCtrl.lastName" class="form-control" placeholder="Last name"></input>
+        </div>
+        <div>
+            <label>Email address</label>
+            <span class="alert-danger" ng-show=" (!signupValidation.email.$pristine || signupValidation.$submitted) && signupValidation.email.$error.required">Invalid</span>
+            <input type="text" name="email" required ng-model="signupCtrl.email" class="form-control" placeholder="Email address"></input>
+        </div>
+        <div>
+            <label>Phone number</label>
+            <span class="alert-danger" ng-show="(!signupValidation.phone.$pristine || signupValidation.$submitted) && signupValidation.phone.$error.required">Invalid</span>
+             <span ng-show="signupValidation.phone.$error.minlength || signupValidation.phone.$error.maxlength"
+             class="alert-danger">Invalid</span>
+            <input required type="text" name="phone" ng-model="signupCtrl.phone" class="form-control" placeholder="Phone number" ng-minlength="10" ng-maxlength="10"></input>
+        </div>
+        <div>
+            <label>Favorite food (Short-Name)</label>
+            <span class="alert-danger" ng-show=" (!signupValidation.shortName.$pristine || signupValidation.$submitted) && signupValidation.shortName.$error.required">Invalid</span>
+             <span class="alert-danger" ng-show="signupCtrl.errorMessage">Invalid</span>
+            <input required type="text" name="shortName"  ng-model="signupCtrl.shortName" class="form-control" placeholder="Short name"></input>
+        </div>
+            <button required type="submit"
+            class ="btn-primary">Submit</button>
+            <span class="alert-success text-center" ng-show="signupCtrl.message">Your information has been saved</span>
+        </div>
+    </div>
+</form>
